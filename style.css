@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Slabo 27px", serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #0da0ad;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  width: 90vw;
+}
+
+div.contant-text {
+  text-align: center;
+  width: 100%;
+}
+
+div.contant-text h1{
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+div.contant-text p {
+  color: #fff;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+
+textarea.text {
+  background-color: #fff;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 1);
+  height: 19rem;
+  margin-bottom: 1rem;
+  width: 17rem;
+  padding: 1rem;
+  overflow: auto;
+}
+
+div.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+div.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #A8EB12;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transition: 0.2s all;
+  cursor: pointer;
+  padding: 1rem;
+  margin: .5rem;
+  width: 3rem;
+}
+
+div.buttons button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+button.btn-remove i{
+  color: #ff0000;
+}
+
+button.btn-down i{
+  color: #4212c5;
+}
+
+@media only screen and (min-width: 600px) {
+  div.container {
+    width: 43rem;
+  }
+
+  div.contant-text h1 {
+    font-size: 2rem;
+    
+  }
+
+  div.contant-text p {
+    font-size: 1rem;
+  }
+
+  textarea.text {
+    height: 60rem;
+    width: 40rem;
+  }
+
+  div.buttons button {
+    margin: 1rem;
+    width: 5rem;
+  }
+}
